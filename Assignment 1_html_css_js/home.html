@@ -1,0 +1,40 @@
+<!--
+Name: Conversion Tool.
+Contributions By- 1. Mohit Mahawar.
+				  2. Adarsh Baranwal.
+				  3. Hisham.
+-->
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css"></link>
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<div id="container" align="center">
+			<div id="header" >
+				<h1 align="center">Conversion Tool</h1>
+			</div>
+			<div id="menu">
+				 <p class="item" onClick="changeContent(1);"><br>Length</p> 
+				 <p class="item" onClick="changeContent(2);"><br>Weight</p> 
+				 <p class="item" onClick="changeContent(3);"><br>Temperature </p>
+			</div>
+			<div id="content">		
+				<div id="con" align="center">
+				   <br><br><br>
+				   <form id="myform">
+				   <span id="text1">Distance in KM: </span><input id="field1" type="number"  step="any"oninput="disableField(2);"><br><br>
+				   <span id="text2">Distance in Miles: </span> <input id="field2" type ="number" step="any" oninput="disableField(1);"><br><br>
+				   <button id="convertButton" type="button"  onClick="convert(1);"style ="margin-left:130px;">Convert</button>
+				   </form>
+				 </div>
+			</div> 
+			<div id="footer" align="center">
+				<p>Copyright: Mohit,Adarsh and Hisham.</p>
+			</div>
+		</div>
+	</body>
+</html>
